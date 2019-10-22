@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Css button</title>
+    </head>
+    <style>
+        .delete-btn {
+            cursor: pointer;
+            position: relative;
+            font-size: 14px;
+            border: 1px solid #878685;
+            font-weight: bold;
+            padding: 15px 50px 15px 7px;
+            background-color: rgb(243, 165, 79);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        .delete-btn:before,
+        .delete-btn:after {
+            position: absolute;
+            content: " "
+        }
+
+        .delete-btn:before {
+            display: block;
+            width: 38px;
+            height: 38px;
+            border-radius: 19px;
+            background-color: #ffffff;
+            right: 5px;
+            top: 5px;
+        }
+
+        .delete-btn:after {
+            content: "\00d7";
+            font-size: 26px;
+            right: 15px;
+            top: 7px;
+        }
+    </style>
+    <body>
+        <button class="delete-btn" >Delete</button>
+    </body>
+</html>
